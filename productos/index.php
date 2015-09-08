@@ -6,14 +6,14 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, maximun-scale=1" />
-	<meta name="description" content="Información de la empresa" />
+	<meta name="description" content="Productos de cafetol" />
 	<meta name="keywords" content="Cafetol, café, productos, cafe molido, cafe tostado" />
-	<title>Nosotros|Cafetol</title>
+	<title>Productos|Cafetol</title>
 	<link rel="icon" href="../imagenes/iconob.png" />
 	<link rel="stylesheet" href="../css/normalize.css" />
 	<link rel="stylesheet" href="../css/iconos/style.css" />
 	<link rel="stylesheet" href="../css/style.css" />
-	<link rel="stylesheet" href="../css/nosotro.css" />
+	<link rel="stylesheet" href="../css/productos.css" />
 	<script src="../js/jquery_2_1_1.js"></script>
 	<script src="../js/scripag.js"></script>
 </head>
@@ -35,8 +35,8 @@
 		<nav id="mnP">
 			<ul>
 				<li><a href="../">Inicio</a></li>
-				<li><a class="sull" href="../nosotros">Nosotros</a></li>
-				<li class="submen" data-num="1"><a href="../productos">Productos</a>
+				<li><a href="../nosotros">Nosotros</a></li>
+				<li class="submen" data-num="1"><a class="sull" href="../productos">Productos</a>
 					<ul class="children1">
 						<?php
 							$Mntp="SELECT * from tipos order by id_tipo asc";
@@ -59,42 +59,76 @@
 	</article>
 	<section>
 		<div class="htres">
-			<h2>Nosotros</h2>
+			<h2>PRODUCTOS</h2>
 		</div>
-		<article id="automargen" class="textons">
-			<h2>Misión</h2>
-			<p>
-				Producir, procesar y comercializar Café Especial Toledo tostado y molido en sus diferentes formas y presentaciones, conservando sus características, manteniendo una excelente calidad, 
-				innovando en la presentación del producto, brindando la mejor atención al cliente y mejorando continuamente la calidad de vida de nuestros Asociados y sus Familias.
-			</p>
-			<h2>Visión</h2>
-			<p>
-				La Asociación  Productora y  Comercializadora de Café  Especial Toledo -CAFETOL-, al año 2018, 
-				será una organización consolidada productiva y competitiva, sostenible e incluyente, 
-				con sentido de pertenencia, posicionada comercialmente a nivel nacional e internacional.
-			</p>
+		<article class="tdPP">
+			<?php
+				error_reporting(E_ALL ^ E_NOTICE);
+				$tamno_pagina=15;
+				$pagina= $_GET['pagina'];
+				if (!$pagina) {
+					$inicio=0;
+					$pagina=1;
+				}
+				else{
+					$inicio= ($pagina - 1)*$tamno_pagina;
+				}
+				$ssql="SELECT * from productos order by id_p desc";
+				$rs=mysql_query($ssql,$conexion) or die (mysql_error());
+				$num_total_registros= mysql_num_rows($rs);
+				$total_paginas= ceil($num_total_registros / $tamno_pagina);
+				$gsql="SELECT * from productos order by id_p desc limit $inicio, $tamno_pagina";
+				$impsql=mysql_query($gsql,$conexion) or die (mysql_error());
+				while ($xor=mysql_fetch_array($impsql)) {
+					$idP=$xor['id_p'];
+					$tpP=$xor['tipo_id'];
+					$nmP=$xor['nam_p'];
+					$rsP=$xor['rs_p'];
+					$xxP=$xor['txt_p'];
+					$primerImg="SELECT * from img_producto where p_id=$idP order by id_img_p asc limit 1";
+					$sql_primg=mysql_query($primerImg,$conexion) or die (mysql_error());
+					$numimg=mysql_num_rows($sql_primg);
+					if ($numimg>0) {
+						while ($igp=mysql_fetch_array($sql_primg)) {
+							$idigp=$igp['id_img_p'];
+							$rtigp=$igp['rut_img'];
+						}
+					}
+					else{
+						$idigp=0;
+						$rtigp="imagenes/predeterminado.png";
+					}
+			?>
+			<figure>
+				<img src="../<?php echo $rtigp ?>" alt="<?php echo $nmP ?>" />
+				<figcaption>
+					<h2><?php echo "$nmP"; ?></h2>
+				</figcaption>
+			</figure>
+			<?php
+				}
+			?>
 		</article>
-		<div class="htres">
-			<h2>Nosotros</h2>
-		</div>
-		<article id="automargen" class="textons">
-			<h2>LOS CAFES DE ORIGEN</h2>
-			<p>
-				Son Cafés que provienen de una región o finca, con cualidades únicas, debido a que crecen en sitios especiales. 
-				Son vendidos de igual manera al consumidor final sin ser mezclados con otras calidades o cafés provenientes de otros orígenes. 
-				Los clientes los prefieren por sus especiales atributos en su sabor y aroma.
-			</p>
-			<h2>PORQUE ES IMPORTANTE TOMAR CAFETOL</h2>
-			<p>
-				El placer de probar los mejores Cafés Colombianos, está en CAFETOL. Sentir este sabor es degustar la riqueza de los aromas más exquisitos de las montañas colombianas. 
-				Hemos seleccionado los mejores granos, directamente desde su origen, los cuales se destacan por su acidez media, cuerpo medio, con una taza limpia, suave y de sabor achocolatado y a nueces tostadas impresas en su Fragancia y aroma pronunciado, fuerte sabor y olor, que hacen de nuestro café, uno de los mejores cafés del mundo. 
-				Nuestros clientes pueden degustar de manera fresca y pura una deliciosa bebida, que sale del corazón de esta hermosa región y que es elaborada con cariño, por las manos laboriosas del Campesino.
-			</p>
-			<h2>DONDE SE PRODUCE Y EL PORQUE DEL CAFÉ ESPECIAL TOLEDO</h2>
-			<p>
-				Los municipios de Toledo y Labateca, cuna del Café Especial Toledo de Origen, están localizados al suroriente del Departamento Norte de Santander, a 94 kilómetros de la ciudad de Cúcuta, sobre las estribaciones de la cordillera oriental, con una altura sobre el nivel del mar de 1.650 mts., una temperatura que oscila entre los 12 y 18 °C. 
-				La posición geográfica dentro del parque Nacional natural Tamá, los vientos cálidos que llegan de los llanos Orientales, los ricos suelos volcánicos, las condiciones climáticas, el cultivo bajo el bosque y una única cosecha en el año; hacen que se produzca el Café Especial Toledo de Origen. Además, el don de sus habitantes, sus lindos paisajes, su riqueza hídrica, el ambiente del Parque Tama, su historia y la Fe en Dios; hacen que muchos sientan el deseo de conocer esta tierra pródiga y bendita.
-			</p>
+		<article id="automargen" class="pagin">
+			<br />
+			<?php
+				//muestro los distintos indices de las paginas
+				if ($total_paginas>1) {
+					for ($i=1; $i <=$total_paginas ; $i++) { 
+						if ($pagina==$i) {
+							//si muestro el indice del la pagina actual, no coloco enlace
+				?>
+					<b><?php echo $pagina." "; ?></b>
+				<?php
+						}
+						else{
+							//si el índice no corresponde con la página mostrada actualmente, coloco el enlace para ir a esa página 
+				?>
+							<a href="index.php?pagina=<?php echo $i ?>"><?php echo "$i"; ?></a>				<?php
+						}
+					}
+				}
+			?>
 		</article>
 	</section>
 	<footer>

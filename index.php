@@ -9,7 +9,7 @@
 	<meta name="description" content="cafetol" />
 	<meta name="keywords" content="Cafetol, café, productos, cafe molido, cafe tostado" />
 	<title>Cafetol</title>
-	<link rel="icon" href="imagenes/icono.png" />
+	<link rel="icon" href="imagenes/iconob.png" />
 	<link rel="image_src" href="imagenes/logo.png" />
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/iconos/style.css" />
@@ -172,7 +172,7 @@
 				</p>
 				<div><span class="icon-old-phone"></span> +48 12 77 33 22</div>
 				<div><span class="icon-mail"></span> contact@dominio.com</div>
-				<div><span class="icon-location"></span> Ui, Krakowwska 12, 30-229 Krakow, Poland</div>
+				<div><span class="icon-location"></span> Vereda Santa Ana Kilometro 5 vía Toledo-Chinacota - Finca el cafetero</div>
 				<article id="redes">
 					<a href="" target="_blank"><span class="icon-facebook2"></span></a>
 					<a href="" target="_blank"><span class="icon-instagram"></span></a>

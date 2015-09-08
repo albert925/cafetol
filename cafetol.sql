@@ -32,6 +32,14 @@ CREATE TABLE IF NOT EXISTS `img_producto` (
   `rut_img` varchar(500) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
+-- volcado de datos img
+INSERT into `img_producto`(`p_id`,`rut_img`) values 
+(1,"imagenes/productos/p50g.jpg"),
+(2,"imagenes/productos/p125g.jpg"),
+(3,"imagenes/productos/p250g.jpg"),
+(4,"imagenes/productos/p550g.jpg"),
+(5,"imagenes/productos/p1000g.jpg");
+
 -- --------------------------------------------------------
 
 --
@@ -45,6 +53,15 @@ CREATE TABLE IF NOT EXISTS `productos` (
   `rs_p` text COLLATE utf8_spanish_ci NOT NULL,
   `txt_p` text COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- Volcado de datos para la tabla `productos`
+
+INSERT into `productos`(`tipo_id`,`nam_p`,`rs_p`,`txt_p`) values 
+(1,'Paquete cafÃ© 50g','',''),
+(1,'Paquete cafÃ© 125g','',''),
+(1,'Paquete cafÃ© 250g','',''),
+(1,'Paquete cafÃ© 500g','',''),
+(1,'Paquete cafÃ© 1000g','','');
 
 -- --------------------------------------------------------
 
