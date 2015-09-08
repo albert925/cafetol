@@ -1,8 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,700,800);/*font-family: 'Dosis', sans-serif;*/
+/*fuente paga*/
+@font-face{
+	font-family: "andada";
+	font-weight: normal;
+	src: url(fuentes/Andada-Regular.otf);
+}
+@font-face{
+	font-family: "andada";
+	font-weight: bold;
+	src: url(fuentes/Andada-Bold.otf);
+}
 body{
 	background-image: url(../imagenes/textura.png);
 	background-repeat: repeat;
-	font-family: 'Dosis', sans-serif;
+	font-family: "andada";
 	font-size: 16px;
 }
 	figure img{width: 100%;}
