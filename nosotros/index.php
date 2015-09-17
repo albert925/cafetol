@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="../css/nosotro.css" />
 	<script src="../js/jquery_2_1_1.js"></script>
 	<script src="../js/scripag.js"></script>
+	<script src="../js/nosotros.js"></script>
 </head>
 <body>
 	<div id="line"></div>
@@ -58,49 +59,60 @@
 		</nav>
 	</article>
 	<section>
-		<div class="htres">
+		<div class="hcuatr">
 			<h2>Nosotros</h2>
 		</div>
-		<article id="automargen" class="textons">
-			<h2>Misión</h2>
-			<p>
-				Producir, procesar y comercializar Café Especial Toledo tostado y molido en sus diferentes formas y presentaciones, conservando sus características, manteniendo una excelente calidad, 
-				innovando en la presentación del producto, brindando la mejor atención al cliente y mejorando continuamente la calidad de vida de nuestros Asociados y sus Familias.
-			</p>
-			<h2>Visión</h2>
-			<p>
-				La Asociación  Productora y  Comercializadora de Café  Especial Toledo -CAFETOL-, al año 2018, 
-				será una organización consolidada productiva y competitiva, sostenible e incluyente, 
-				con sentido de pertenencia, posicionada comercialmente a nivel nacional e internacional.
-			</p>
+		<figure id="banner">
+			<img src="../imagenes/bann_nosotros.jpg" alt="nosotros" />
+		</figure>
+		<article class="textons">
+			<h2 class="disnhhs bthdos" data-nm="1">Misión</h2>
+			<article id="cj1" class="cjgnocl">
+				<p id="Nnp">
+					Producir, procesar y comercializar Café Especial Toledo tostado y molido en sus diferentes formas y presentaciones, conservando sus características, manteniendo una excelente calidad, 
+					innovando en la presentación del producto, brindando la mejor atención al cliente y mejorando continuamente la calidad de vida de nuestros Asociados y sus Familias.
+				</p>
+			</article>
+			<h2 class="disnhhs bthdos" data-nm="2">Visión</h2>
+			<article id="cj2" class="cjgnocl">
+				<p id="Nnp">
+					La Asociación  Productora y  Comercializadora de Café  Especial Toledo -CAFETOL-, al año 2018, 
+					será una organización consolidada productiva y competitiva, sostenible e incluyente, 
+					con sentido de pertenencia, posicionada comercialmente a nivel nacional e internacional.
+				</p>
+			</article>
 		</article>
-		<div class="htres">
-			<h2>Café</h2>
-		</div>
-		<article id="automargen" class="textons">
-			<h2>LOS CAFES DE ORIGEN</h2>
-			<p>
-				Son Cafés que provienen de una región o finca, con cualidades únicas, debido a que crecen en sitios especiales. 
-				Son vendidos de igual manera al consumidor final sin ser mezclados con otras calidades o cafés provenientes de otros orígenes. 
-				Los clientes los prefieren por sus especiales atributos en su sabor y aroma.
-			</p>
-			<h2>PORQUE ES IMPORTANTE TOMAR CAFETOL</h2>
-			<p>
-				El placer de probar los mejores Cafés Colombianos, está en CAFETOL. Sentir este sabor es degustar la riqueza de los aromas más exquisitos de las montañas colombianas. 
-				Hemos seleccionado los mejores granos, directamente desde su origen, los cuales se destacan por su acidez media, cuerpo medio, con una taza limpia, suave y de sabor achocolatado y a nueces tostadas impresas en su Fragancia y aroma pronunciado, fuerte sabor y olor, que hacen de nuestro café, uno de los mejores cafés del mundo. 
-				Nuestros clientes pueden degustar de manera fresca y pura una deliciosa bebida, que sale del corazón de esta hermosa región y que es elaborada con cariño, por las manos laboriosas del Campesino.
-			</p>
-			<h2>DONDE SE PRODUCE Y EL PORQUE DEL CAFÉ ESPECIAL TOLEDO</h2>
-			<p>
-				Los municipios de Toledo y Labateca, cuna del Café Especial Toledo de Origen, están localizados al suroriente del Departamento Norte de Santander, a 94 kilómetros de la ciudad de Cúcuta, sobre las estribaciones de la cordillera oriental, con una altura sobre el nivel del mar de 1.650 mts., una temperatura que oscila entre los 12 y 18 °C. 
-				La posición geográfica dentro del parque Nacional natural Tamá, los vientos cálidos que llegan de los llanos Orientales, los ricos suelos volcánicos, las condiciones climáticas, el cultivo bajo el bosque y una única cosecha en el año; hacen que se produzca el Café Especial Toledo de Origen. Además, el don de sus habitantes, sus lindos paisajes, su riqueza hídrica, el ambiente del Parque Tama, su historia y la Fe en Dios; hacen que muchos sientan el deseo de conocer esta tierra pródiga y bendita.
-			</p>
+		<article class="textons">
+			<h2 class="disnhhs bthdos" data-nm="3">Cafetol</h2>
+		</article>
+		<article class="textonvv">
+			<article id="cj3" class="cjgnocl">
+				<article id="Nnp">
+					<h2>LOS CAFES DE ORIGEN</h2>
+					<p>
+						Son Cafés que provienen de una región o finca, con cualidades únicas, debido a que crecen en sitios especiales. 
+						Son vendidos de igual manera al consumidor final sin ser mezclados con otras calidades o cafés provenientes de otros orígenes. 
+						Los clientes los prefieren por sus especiales atributos en su sabor y aroma.
+					</p>
+					<h2>PORQUE ES IMPORTANTE TOMAR CAFETOL</h2>
+					<p>
+						El placer de probar los mejores Cafés Colombianos, está en CAFETOL. Sentir este sabor es degustar la riqueza de los aromas más exquisitos de las montañas colombianas. 
+						Hemos seleccionado los mejores granos, directamente desde su origen, los cuales se destacan por su acidez media, cuerpo medio, con una taza limpia, suave y de sabor achocolatado y a nueces tostadas impresas en su Fragancia y aroma pronunciado, fuerte sabor y olor, que hacen de nuestro café, uno de los mejores cafés del mundo. 
+						Nuestros clientes pueden degustar de manera fresca y pura una deliciosa bebida, que sale del corazón de esta hermosa región y que es elaborada con cariño, por las manos laboriosas del Campesino.
+					</p>
+					<h2>DONDE SE PRODUCE Y EL PORQUE DEL CAFÉ ESPECIAL TOLEDO</h2>
+					<p>
+						Los municipios de Toledo y Labateca, cuna del Café Especial Toledo de Origen, están localizados al suroriente del Departamento Norte de Santander, a 94 kilómetros de la ciudad de Cúcuta, sobre las estribaciones de la cordillera oriental, con una altura sobre el nivel del mar de 1.650 mts., una temperatura que oscila entre los 12 y 18 °C. 
+						La posición geográfica dentro del parque Nacional natural Tamá, los vientos cálidos que llegan de los llanos Orientales, los ricos suelos volcánicos, las condiciones climáticas, el cultivo bajo el bosque y una única cosecha en el año; hacen que se produzca el Café Especial Toledo de Origen. Además, el don de sus habitantes, sus lindos paisajes, su riqueza hídrica, el ambiente del Parque Tama, su historia y la Fe en Dios; hacen que muchos sientan el deseo de conocer esta tierra pródiga y bendita.
+					</p>
+				</article>
+			</article>
 		</article>
 	</section>
 	<footer>
 		<article class="flxfoot">
 			<article class="informc">
-				<h2>Nosotros</h2>
+				<h2 id="topno">Nosotros</h2>
 				<p>
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
 					Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
