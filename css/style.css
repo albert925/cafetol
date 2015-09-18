@@ -180,6 +180,10 @@ section{background: rgba(0,0,0,0.2);}
 	border-bottom: 1px solid #BD954F;
 	margin-left: 1em;
 }
+.hcinc{
+	border-bottom: 1px solid #BD954F;
+	margin-left: 1em;
+}
 .hdos{
 	border-bottom: 1px solid #372517;
 }
@@ -207,6 +211,14 @@ section{background: rgba(0,0,0,0.2);}
 		padding: 1em 0 0 0;
 		text-align: left;
 		width: 8em;
+	}
+	.hcinc h2{
+		border-bottom: 1px solid #BD954F;
+		color: #A07940;
+		font-size: 40px;
+		margin: 0 0 1em 0;
+		padding: 1em 0 0 0;
+		text-align: left;
 	}
 @media screen and (max-width: 900px){
 		footer .flxfoot{

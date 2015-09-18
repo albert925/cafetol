@@ -100,7 +100,9 @@
 					}
 			?>
 			<figure>
-				<img src="../<?php echo $rtigp ?>" alt="<?php echo $nmP ?>" />
+				<a href="../descripcion.php?pd=<?php echo $idP ?>">
+					<img src="../<?php echo $rtigp ?>" alt="<?php echo $nmP ?>" />
+				</a>
 				<figcaption>
 					<h2><?php echo "$nmP"; ?></h2>
 				</figcaption>

@@ -1,3 +1,17 @@
+table{
+	border:1px solid #A07942;
+	margin: 1em auto;
+}
+	table td{
+		color: #A07942;
+		padding: 0.5em;
+	}
+.otrotx{
+	background: url(../imagenes/textura2.png);
+	color: #fff;
+	text-align: justify;
+	padding: 1em 0;
+}
 .tdPP{
 	display: flex;
 	-webkit-flex-wrap: wrap;
@@ -32,6 +46,13 @@
 				text-transform: uppercase;
 			}
 			.tdPP figure figcaption p{color: #fff;}
+		.tdPP figure img:hover,.tdPP figure img:active{
+			-webkit-filter: sepia(1);
+			-moz-filter: sepia(1);
+			-o-filter: sepia(1);
+			-ms-filter: sepia(1);
+			filter: sepia(1);
+		}
 @media screen and (max-width: 900px){
 		.tdPP figure{width: 40%;}
 			.tdPP figure figcaption{
