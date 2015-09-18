@@ -6,6 +6,10 @@ table{
 		color: #A07942;
 		padding: 0.5em;
 	}
+#galery{
+	margin: 0 auto 0 auto;
+	width: 30%;
+}
 .otrotx{
 	background: url(../imagenes/textura2.png);
 	color: #fff;
@@ -23,7 +27,7 @@ table{
 }
 	.tdPP figure{
 		margin: 1em auto 1em auto;
-		width: 30%;
+		width: 15%;
 	}
 		.tdPP figure figcaption{
 			background: rgba(0,0,0,0.4);
@@ -41,7 +45,7 @@ table{
 			}
 			.tdPP figure figcaption h2{
 				color: #9F783D;
-				font-size: 28px;
+				font-size: 20px;
 				margin: 0;
 				text-transform: uppercase;
 			}
@@ -54,12 +58,20 @@ table{
 			filter: sepia(1);
 		}
 @media screen and (max-width: 900px){
+	#galery{
+		margin: 0 auto 0 auto;
+		width: 50%;
+	}
 		.tdPP figure{width: 40%;}
 			.tdPP figure figcaption{
 				padding: 0.5em;
 			}
 }
 @media screen and (max-width: 550px){
+	#galery{
+		margin: 1em auto 1em auto;
+		width: 90%;
+	}
 	.tdPP{
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
