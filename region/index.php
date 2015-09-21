@@ -51,7 +51,6 @@
 						?>
 					</ul>
 				</li>
-				<li><a href="../novedades">Novedades</a></li>
 				<li><a href="../contacto">Contacto</a></li>
 				<li><a class="sull" href="../region">Región</a></li>
 			</ul>
