@@ -1,3 +1,8 @@
+#Nnp{
+	background: url(../imagenes/textura2.png);
+	padding: 1em;
+	margin:0;
+}
 .cca{
 	width: 30%;
 }
@@ -21,18 +26,35 @@
 			margin-right: 0.5em;
 			text-decoration: none;
 		}
+.flxregn{
+	display: flex;
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+	padding: 1em 0;
+}
+	.flxregn figure{
+		width: 40%;
+	}
+	.flxregn #Nnp{
+		width: 50%;
+	}
+	.texto a{
+		color: #DFB361;
+		text-decoration: underline;
+	}
 @media screen and (max-width: 900px){
 	.cca,.ccb{
 		width: 45%;
 	}
 }
 @media screen and (max-width: 550px){
-	.contacto{
+	.contacto,.flxregn{
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
 		flex-direction: column;
 	}
-	.cca,.ccb{
+	.cca,.ccb,.flxregn figure,.flxregn #Nnp{
 		margin: 1em auto;
 		width: 90%;
 	}
